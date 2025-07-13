@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eshop Pro Documentation</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Eshop Pro Documentation">
+    <meta name="author" content="Eshop Pro Documentation">
+    <link rel="shortcut icon" href="./images/default_full_logo.svg">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <style>
+        .image-doc {
+            margin-bottom: 1rem;
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        .twenty {
+            height: 20px;
+        }
+
+        .title-img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body class="docs-page">
+    <header class="header fixed-top">
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+                    <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+                        type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="site-logo"><a class="navbar-brand" href="#section-1"><img class="logo-icon me-2"
+                                src="./images/default_full_logo.svg" alt="logo"><span class="logo-text"><span
+                                    class="text-alt">Docs</span></span></a>
+                    </div>
+
+                </div>
+            </div>
+            <!--//container-->
+        </div>
+        <!--//branding-->
+    </header>
+    <!--//header-->
+
+
+    <div class="docs-wrapper">
+        <div id="docs-sidebar" class="docs-sidebar">
+            <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+                    <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <nav id="docs-nav" class="docs-nav navbar">
+                <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">&nbsp; What is
+                            Eshop Pro?</a>
+                    </li>
+
+                    <li class="nav-item section-title"><a class="nav-link scrollto" href="#section-6"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>System
+                            Requirements</a>
+                    </li>
+
+                    <li class="nav-item section-title"><a class="nav-link scrollto" href="#section-7"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-handshake"></i></span>Support</a>
+                    </li>
+
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2">
+                            <span class="theme-icon-holder me-2"><i
+                                    class="fas fa-arrow-down"></i></span>Installation</a>
+                    </li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3">
+                            <span class="theme-icon-holder me-2"><i class="fa fa-exclamation"></i></span>Key
+                            Considerations and Recommended Actions</a>
+                    </li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Configure
+                            Eshop Pro</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2"><i class="fas fa-cog"></i> &nbsp;
+                            Settings (General,Email,System etc..)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-24"><i class="fas fa-envelope"></i>
+                            &nbsp; Email settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-25"><i class="fas fa-cog"></i>
+                            &nbsp; Pusher settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-26"><i
+                                class="fas fa-money-bill"></i>
+                            &nbsp; Payment Method settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-27"><i class="fas fa-truck"></i>
+                            &nbsp; Shipping Methods settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-28"><i class="fas fa-comment"></i>
+                            &nbsp; SMS Gateway settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-29"><i class="fas fa-coins"></i>
+                            &nbsp; Currency settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-30"><i class="fas fa-warehouse"></i>
+                            &nbsp; S3 Storage settings</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-4"><i
+                                class="fas fa-user-secret"></i>
+                            &nbsp;System Users</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1"><i class="fas fa-cog"></i> &nbsp;
+                            Auto Updater</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-31"><i class="fas fa-home"></i>
+                            &nbsp; Home</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-5"><i class="fas fa-user"></i>
+                            &nbsp; Profile</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-6"><i class="fas fa-language"></i>
+                            &nbsp; Languages</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-7"><i class="fas fa-store"></i>
+                            &nbsp; Stores</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-8"><i class="fas fa-box"></i>
+                            &nbsp; Orders</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-40"><i class="fas fa-box"></i>
+                            &nbsp; Shipping Flow</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-9"><i class="fas fa-list"></i>
+                            &nbsp; Categories</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-10"><i class="fas fa-box"></i>
+                            &nbsp; Stock Manage</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-11"><i class="fas fa-copyright"></i>
+                            &nbsp; Brand</a></li>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-13"><i class="fas fa-users"></i>
+                            &nbsp; Sellers</a></li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link scrollto" href="#item-5-14" id="productsDropdown">
+                            <i class="fas fa-box"></i>
+                            &nbsp; Products
+                        </a>
+                        <ul class="submenu">
+                            <li><a class="dropdown-item" href="#product-1">Attributes</a></li>
+                            <li><a class="dropdown-item" href="#product-2">Add Products</a></li>
+                            <li><a class="dropdown-item" href="#product-3">Manage Products</a></li>
+                            <li><a class="dropdown-item" href="#product-5">Product FAQs</a></li>
+                            <li><a class="dropdown-item" href="#product-4">Bulk Upload</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-15"><i class="fas fa-box"></i>
+                            &nbsp; Combo Products</a>
+                        <ul class="submenu">
+                            <li><a class="dropdown-item" href="#combo_product-1">Attributes</a></li>
+                            <li><a class="dropdown-item" href="#combo_product-2">Add Products</a></li>
+                            <li><a class="dropdown-item" href="#combo_product-3">Manage Products</a></li>
+                            <li><a class="dropdown-item" href="#combo_product-5">Product FAQs</a></li>
+                            <li><a class="dropdown-item" href="#combo_product-4">Bulk Upload</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-32"><i class="fas fa-users"></i>
+                            &nbsp; Delivery Boys</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-33"><i class="fas fa-coins"></i>
+                            &nbsp; Cash Collection</a></li>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-34"><i class="fas fa-images"></i>
+                            &nbsp; Media</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-35"><i class="fas fa-box"></i>
+                            &nbsp; Offers</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-36"><i
+                                class="fas fa-ticket-alt"></i>
+                            &nbsp; PromoCodes</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-37"><i
+                                class="fas fa-hand-paper"></i>
+                            &nbsp; Users</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-38"><i class="fas fa-map"></i>
+                            &nbsp; Location</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-39"><i class="fas fa-fire"></i>
+                            &nbsp; Firebase</a></li>
+                    </li>
+                </ul>
+
+            </nav>
+            <!--//docs-nav-->
+        </div>
+        <!--//docs-sidebar-->
+        <div class="docs-content">
+            <div class="container">
+                <article class="docs-article" id="section-1">
+                    <section class="docs-section" id="item-1-1">
+
+                        <h2 class="section-heading">What is Eshop Pro?</h2>
+                        <p> Eshop Pro is a revolutionary e-commerce platform that offers a seamless online shopping
+                            experience with its multi-store capabilities. It empowers businesses of all sizes to create
+                            and manage their online stores effortlessly, showcasing their products, managing inventory,
+                            processing orders, and analyzing sales data with ease. The platform's standout feature is
+                            its multi-store functionality, allowing businesses to operate multiple online stores under a
+                            single umbrella, catering to different product lines, brands, or target audiences. This
+                            flexibility streamlines operations and opens up new avenues for growth and expansion.
+                        </p>
+                        <p>
+                            For customers, Eshop Pro provides a user-friendly platform where they can explore a wide
+                            range of products from various stores, all in one convenient location. With advanced search
+                            and filtering capabilities, customers can easily find what they're looking for, ensuring a
+                            seamless and enjoyable shopping experience. Eshop Pro prioritizes security and reliability,
+                            ensuring that all transactions are conducted in a safe and secure environment, with robust
+                            payment gateways and secure data encryption, allowing customers to shop with confidence.
+                        </p>
+                        <p>Eshop Pro is a multi-vendor e-commerce website, creating a thriving online marketplace where
+                            multiple vendors can list and sell their products. This diverse ecosystem fosters healthy
+                            competition, offering customers a vast array of choices from various sellers, all within a
+                            single platform. Eshop Pro's multi-vendor approach promotes entrepreneurship and provides a
+                            level playing field for businesses of all sizes to thrive in the digital space.</p>
+
+                    </section>
+                    <!--//section-->
+
+
+                </article>
+
+
+
+
+                <article class="docs-article" id="section-6">
+                    <section class="docs-section">
+                        <h2 class="section-heading">Minimum System Requirements</h2>
+                        <p>Before you get started, please ensure that your server meets the following minimum system
+                            requirements:</p>
+
+                        <h3>Server Requirements</h3>
+                        <ul>
+                            <li>Web Server: Apache or Nginx</li>
+                            <li>Operating System: Eshop Pro is compatible with a wide range of operating systems,
+                                including but not limited to Linux, macOS, and Windows. You can use Eshop Pro on your
+                                preferred operating system without any compatibility concerns.</li>
+                            <li>Server Resources:
+                                <ul>
+                                    <li>CPU: At least 1-2 CPU cores</li>
+                                    <li>RAM: 1 GB of RAM</li>
+                                    <li>Disk Space: 10-20 GB of disk space</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>PHP Version</h3>
+                        <p>Eshop Pro requires PHP version 8.1 or higher.</p>
+
+                        <h3>MySQL Version</h3>
+                        <p>Eshop Pro is compatible with MySQL version 5.7 or higher.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+
+
+
+                <article class="docs-article" id="section-7">
+                    <section class="docs-section">
+                        <h2 class="section-heading">Get Support</h2>
+                        <p>If you need assistance or have any questions, our support team is here to help.</p>
+
+                        <p>You can reach us for support through the following channels:</p>
+
+                        <ul>
+                            <li>Skype: <a href="https://join.skype.com/invite/ulxy3uPftGfT" target="_blank">Chat with us
+                                    on Skype</a></li>
+                            <!-- Add more support contact information as needed -->
+                        </ul>
+
+                        <p>We're available to assist you with any inquiries or issues you may encounter while using
+                            Eshop Pro.</p>
+                    </section>
+                    <!--//section-->
+                </article>
+
+
+
+
+
+
+
+
+                <article class="docs-article" id="section-2">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Installation</h1>
+                        <p>Before you start the installation, please read the key considerations below.</p>
+                        <h3>Key Considerations</h3>
+                        <ul>
+                            <li><b>Database</b>: Do not import the database manually, as the auto-installer will do it
+                                automatically.</li>
+                            <li><b>ZIP Extraction</b>: When extracting
+                                <code>vx.x.x - Eshop Pro - Multi vendor eCommerce.zip</code>
+                                downloaded from your codecanyon account, ensure extraction completed without <b>path too
+                                    long</b> issue prompt. To resolve this, move the ZIP file to a shorter path and
+                                rename it to a shorter
+                                name and try to extract it again.
+                            </li>
+                        </ul>
+                        <section class="docs-intro">
+                            <p>
+                            <ol>
+                                <li>
+                                    Login into you cPanel.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-1.png">
+
+                                        <img src="./images/cpannel/cp-1.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Go to database in your cPanel
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-2.png">
+
+                                        <img src="./images/cpannel/cp-2.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Enter database name and Create a new
+                                    database.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-3.png">
+
+                                        <img src="./images/cpannel/cp-3.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Create Database user.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-4.png">
+
+                                        <img src="./images/cpannel/cp-4.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Assign Database to the user.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-5.png">
+
+                                        <img src="./images/cpannel/cp-5.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Open File manager now.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-6.png">
+
+                                        <img src="./images/cpannel/cp-6.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Go to public_html or
+                                    public_html/your-eshop pro.in folder in the
+                                    file manager, whichever folder your
+                                    domain points to.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-7.png">
+
+                                        <img src="./images/cpannel/cp-7.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Upload the downloaded zip in public_html
+                                    or public_html/your-eshop pro.in folder.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-8.png">
+                                        <img src="./images/cpannel/cp-8.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    unzip or extract the <b>Code vX.X -
+                                        upload this on server.zip</b> file
+                                    that you have just uploaded.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-9.png">
+                                        <img src="./images/cpannel/cp-9.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    verify that all these files are in
+                                    public_html or
+                                    public_html/your-eshop pro.in folder.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/cpannel/cp-10.png">
+                                        <img src="./images/cpannel/cp-10.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Now, Go to Public folder.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/publicFolder.png">
+                                        <img src="./images/publicFolder.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    Then, Open Hot File.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/hotFile.png">
+                                        <img src="./images/hotFile.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    And, Add your Web URL("http://your-eshop pro.in").
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/hotFilePhoto.png">
+                                        <img src="./images/hotFilePhoto.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    visit http://your-eshop pro.in/install and configure the database.
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/db.png">
+                                        <img src="./images/db.png" class="image-doc">
+                                    </a>
+                                </div>
+                                <li>
+                                    <p> After following the above steps you have
+                                        successfully configured the Database. Now configure the admin details.
+                                    </p>
+                                </li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/installation.png">
+                                        <img src="./images/installation.png" class="image-doc">
+                                    </a>
+                                </div>
+
+                            </ol>
+
+                            <p>
+                                Now click Install. Thats it! You are ready to
+                                run your App :
+                                http://your-eshop pro.in/
+                            </p>
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+                </article>
+                <!--//docs-article-->
+
+                <!--//docs-article-->
+
+
+                <article class="docs-article" id="section-3">
+                    <section class="docs-section">
+                        <h2 class="section-heading">Key Considerations and Recommended Actions</h2>
+                        <p>Below are critical scenarios along with corresponding recommended actions to take if
+                            encountered:</p>
+
+                        <h3>1. Issues with the system after an update:</h3>
+                        <p>In the event that you experience unexpected behavior or errors after updating the system to
+                            the new version, we recommend following the steps below:</p>
+                        <ol>
+                            <!-- <li>Go to the root of the project files and take a backup of the `composer.json` and
+                                `composer.lock` files. Also, rename the `vendor` directory to any other name.</li> -->
+
+                            <li>Inside new update files, You can see zip named
+                                <code>Code vx.x.x - upload this on server</code>
+                                extrat it and copy <code>vendor folder & composer.json and
+                                composer.lock</code> files from the root directory.
+                            </li>
+                            <li>Go to the root directory of your current project (Eshop Pro) files, <span
+                                    style="font-weight: bold;">Take backup</span>, and replace the <code>vendor folder & composer.json and
+                                        composer.lock</code> files.</li>
+                            <!-- <li>Run the following commands in your terminal or command prompt from root directory: -->
+                            <li>Run the following command in your terminal or command prompt from root directory:
+                                <ul>
+                                    <!-- <li><code>composer install</code></li> -->
+                                    <li><code>composer dump-autoload</code></li>
+                                </ul>
+                                (Some cPanel providers offer built-in terminals, or you can use SSH access.)
+                            </li>
+                            <li>All done, check if the system works as expected. If not, please revert all the changes
+                                by restoring the backup. Feel free to reach out to us for further assistance.</li>
+                        </ol>
+
+
+                        <h3>2. Images are not displayed system-wide:</h3>
+                        <p>If you find that images are not displaying across the system, follow these steps:</p>
+                        <ol>
+                            <li>Ensure that the <code>symlink</code> function is not listed in the disabled functions,
+                                as shown in
+                                the image below. If it is, remove the <code>symlink</code> function from the list
+                                and save the
+                                changes.<p></p>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/symlink.png">
+                                        <img src="./images/symlink.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>Visit <code>your.installation.url/create-symlink</code> in a browser tab and see if the
+                                issue resolves. If not,</li>
+                            <li>Try running the following command in your terminal or command prompt from the root
+                                directory:
+                                <ul>
+                                    <li><code>php artisan storage:link</code></li>
+                                </ul>
+                                (Some cPanel providers offer built-in terminals, or you can use SSH access.)
+                            </li>
+                            <li>If the issue persists after running the command, it's possible that the
+                                <code>symlink</code>
+                                function does not exist on your server. Please contact hosting support to needful for
+                                <code>symlink</code> function to be work. Feel free to reach out to us for further
+                                assistance.
+                            </li>
+                        </ol>
+
+
+
+                    </section>
+                    <!--//section-->
+                </article>
+
+
+
+
+
+                <article class="docs-article" id="section-5">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Configure Eshop Pro</h1>
+                        <section class="docs-intro">
+                            <div class="callout-block callout-block-info">
+
+                                <div class="content">
+                                    <h4 class="callout-title">
+                                        <span class="callout-icon-holder me-1">
+                                            <svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true"
+                                                focusable="false" data-prefix="fas" data-icon="info-circle" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                                                </path>
+                                            </svg>
+
+                                        </span>
+                                        <!--//icon-holder-->
+                                        Note
+                                    </h4>
+                                    <p>In order to Configure Eshop Pro you must
+                                        have Admin Account.</p>
+                                </div>
+                                <!--//content-->
+                            </div>
+                            <p>
+                                Use the given guide to configure and customize
+                                Eshop Pro as you need.
+
+                            </p>
+                            <p>
+                                Login as admin by
+                            </p>
+                            <ol>
+                                <li>Enter Admin Login id and Password. Click
+                                    Login</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/logins.png">
+                                        <img src="./images/logins.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>Great! You have logged in as Admin.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="./images/dashboard.png">
+                                        <img src="./images/dashboard.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                            </ol>
+
+                        </section>
+                        <!--//docs-intro-->
+                    </header>
+
+                    <section class="docs-section" id="item-5-2">
+                        <h2 class="section-heading">Settings</h2>
+                        <p>
+                            First Of all, we need to set general setting of app
+                        </p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/settings2.png">
+                                <img src="./images/settings2.png" class="image-doc" />
+                            </a>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-24">
+                         <h2 class="section-heading">Email Settings</h2>
+                        <p>Here you can set email setting. Without email setting email functionality will not work.</p>
+
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/settings3.png">
+                                <img src="./images/settings3.png" class="image-doc" />
+                            </a>
+
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-25">
+                        <h2 class="section-heading">Pusher Settings</h2>
+                         <p>Here you can set pusher setting Without pusher setting chat functionality will not work.
+                            </p>
+                        <div id="item-5-25">
+                            <div class="simplelightbox-gallery">
+                                <a href="./images/pusher_settings.png">
+                                    <img src="./images/pusher_settings.png" class="image-doc" />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-26">
+                        <h2 class="section-heading">Payment Methods Settings</h2>
+                        <p>Here, you can enable and disable payment methods and set details of payment methods.
+                            </p>
+                        <div id="item-5-25">
+                            <div class="simplelightbox-gallery">
+                                <a href="./images/payment_settings.png">
+                                    <img src="./images/payment_settings.png" class="image-doc" />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-27">
+                        <h2 class="section-heading">Shipping Methods Settings</h2>
+                        <p>Here, you can select the shipping method: local shipping, free delivery, or standard shipping.
+                            </p>
+                        <div id="item-5-25">
+                            <div class="simplelightbox-gallery">
+                                <a href="./images/shipping_settings.png">
+                                    <img src="./images/shipping_settings.png" class="image-doc" />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-28">
+                        <h2 class="section-heading">SMS Gateway Settings</h2>
+                        <p>Here, you can set dynamic sms gateway settings.
+                            </p>
+                        <div id="item-5-25">
+                            <div class="simplelightbox-gallery">
+                                <a href="./images/sms_settings.png">
+                                    <img src="./images/sms_settings.png" class="image-doc" />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-29">
+                        <h2 class="section-heading">Currency Settings</h2>
+                        <p>Here, you can add, edit, delete, set the default currency, and also see live currency exchange rates.
+                            </p>
+                        <div id="item-5-25">
+                            <div class="simplelightbox-gallery">
+                                <a href="./images/currency_settings.png">
+                                    <img src="./images/currency_settings.png" class="image-doc" />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-30">
+                        <h2 class="section-heading">Storage Settings</h2>
+                        <p>Here, you can add, edit aws storage setting.
+                            </p>
+                        <div id="item-5-25">
+                            <div class="simplelightbox-gallery">
+                                <a href="./images/storage-settings.png">
+                                    <img src="./images/storage-settings.png" class="image-doc" />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-5-4">
+                        <h2 class="section-heading">Assign System Users</h2>
+                        <p>Super Admin always have all the permission. Here you can Assign users like Super admin, Admin
+                            or editer and set permissions for members.
+                        </p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/permission.png">
+                                <img src="./images/permission.png" class="image-doc" />
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+                    </section>
+
+                    <section class="docs-section" id="item-5-1">
+                        <h2 class="section-heading">Auto updater</h2>
+                        <p>
+                            How to use auto updater to update system from current version to next version.
+                        </p>
+                        <p>
+                            NOTE : Make sure you update system in sequence. Like if you have current version 1.0.0 and
+                            you
+                            want to update this version to 1.0.5 then you can't update it directly. You must have to
+                            update in sequence like first update version 1.0.1 then 1.0.2 and 1.0.3 and so on.
+                        </p>
+                        <p>
+                            <b>Below simple step will update your system.</b>
+                        </p>
+                        <ul>
+                            <li>Step 1: Download and extract the new Eshop Pro code from Codecanyon from your downloads
+                                section.</li>
+                            <li>Step 2: After extracting, you would see the content of the package something like this:
+                                <ul>
+                                    <li>/Documentation</li>
+                                    <li>/Updates
+                                        <ul>
+                                            <li>/Update from vX.X.X to vX.X.X.zip</li>
+                                            <li>/Update from vX.X.X to vX.X.X.zip &lt;-- Choose the appropriate as per
+                                                current version of your system.</li>
+
+                                        </ul>
+                                    </li>
+                                    <li>/Code - vX.X.X - upload this on server.zip</li>
+                                    <li>Eshop Pro - vx.x.x - Blank SQL file</li>
+                                </ul>
+                            </li>
+                            <li>Step 3: Open your Eshop Pro admin panel and navigate to Settings &gt; System Updater
+                                Page.
+                            </li>
+                            <li>Step 4 : Drag & Drop or Choose this "update from vX.X.X to vX.X.X.zip" file in the
+                                Upload area.
+                            </li>
+                            <li>Step 5 : Click on "Update the System / Install the Plugin" button and wait for success
+                                message. You are now having the new update installed in your existing system.
+                            </li>
+                        </ul>
+
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/settings.png">
+                                <img src="./images/settings.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                    </section>
+
+
+                    <section class="docs-section" id="item-5-31">
+                        <h2 class="section-heading">Home</h2>
+                       <p>The dashboard contains the sellers, orders and product count and total earnings. It includes recent tickets, recent chats, orders overview, top sellers, and categories. Additionally, it features recent orders, and two charts for revenue analytics and customer statistics.</p>
+
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/dashboard.png">
+                                <img src="./images/dashboard.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-5">
+                        <h2 class="section-heading">Profile</h2>
+                        <p>Click at top right corner on your name. Then select profile from the dropdown and update own
+                            profile.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/profile.png">
+                                <img src="./images/profile.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+                    </section>
+                    <section class="docs-section" id="item-5-6">
+                        <h2 class="section-heading">Manage Languages</h2>
+                        <p> Create and Manage Languages. </p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/languages.png">
+                                <img src="./images/languages.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-7">
+                        <h2 class="section-heading">Add stores</h2>
+                        <p> You can create stores that contain the store name, description, store logo, favicon, primary and secondary colors, offers, categories, and display style. Additionally, you can specify the deliverability type, such as city-wise, pincode-wise, or product-wise, and then provide all the store details accordingly. All the features are managed on a store-by-store basis
+                        </p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/stores.png">
+                                <img src="./images/stores.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <h2 class="section-heading">Manage Stores</h2>
+                        <p> Edit,Update and set default store </p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/manage-stores.png">
+                                <img src="./images/manage-stores.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-8">
+                        <h2 class="section-heading">Orders</h2>
+                        <p>Here all the information related to order is displayed. You can add, update, delete track the orders.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/orders.png">
+                                <img src="./images/orders.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+
+                    <section class="docs-section" id="item-5-40">
+                        <h2 class="section-heading">Shipping Flow</h2>
+                        <p>Only sellers can ship orders.</p>
+                        <h4>1. Seller Panel Overview</h4>
+                        <ul>
+                            <li>In the Seller Panel, you’ll notice two tabs: <strong>Order Items</strong> and
+                                <strong>Shipments</strong>.
+                            </li>
+                            <li>In the <strong>Order Items</strong> tab, you’ll see all the items for your orders.</li>
+                            <li>In the <strong>Shipments</strong> tab, you’ll find a "Create a Parcel" button and
+                                <strong>Created Parcels List</strong>.
+                            </li>
+                        </ul>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/parcel1.png">
+                                <img src="./images/parcel1.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <h4>2.Create Parcel</h4>
+                        <p>To ship an order, click on the "Create a Parcel" button. You’ll be able to select the items you want to ship and then create the parcel.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/parcel2.png">
+                                <img src="./images/parcel2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <h4>3. Managing Parcels</h4>
+                        <p>Once a parcel is created, it will appear in a list with four action buttons:</p>
+                        <ul>
+                            <li><strong>View:</strong> See the items inside the parcel.</li>
+                            <li><strong>Invoice:</strong> View or download the invoice for the parcel.</li>
+                            <li><strong>Update Status:</strong> Open a window to update the shipping status.</li>
+                            <li><strong>Delete:</strong> You can delete a parcel, but only if it hasn't been shipped yet.
+                            </li>
+                        </ul>
+                        <div class="simplelightbox-gallery mt-4">
+                            <a href="./images/parcel3.png">
+                                <img src="./images/parcel3.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <h4>4. Updating Shipping Status</h4>
+                        <p>When you click <strong>Update Status</strong>, a window will open with two options:</p>
+                        <ul>
+                            <li><strong>Local Shipping:</strong> Select the delivery person and update the status.</li>
+                            <li><strong>Shiprocket Orders:</strong> First, create a Shiprocket parcel with the required
+                                details. Once created, Shiprocket parcel details will appear in the status update tab. Below
+                                this, you’ll see two buttons:
+                                <ul>
+                                    <li><strong>Cancel Shiprocket Parcel:</strong> Lets you cancel the Shiprocket parcel if
+                                        needed.</li>
+                                    <li><strong>Refresh:</strong> Refresh the status if it doesn't update automatically.
+                                    </li>
+                                </ul>
+                                <p>Note: The status will usually update on its own, but clicking "Refresh" will manually
+                                    update it to reflect the current parcel status.</p>
+                            </li>
+                        </ul>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/parcel6.png">
+                                <img src="./images/parcel6.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <h4>5. Return Process</h4>
+                        <ul>
+                            <li>Currently, the method for managing return parcels is manual.</li>
+                            <li>When a customer requests a return, the admin will receive the request, accept it, and mark
+                                the item as returned once the parcel is received.</li>
+                            <li><strong>Note:</strong> Sellers cannot update the status for returns.</li>
+                        </ul>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/return1.png">
+                                <img src="./images/return1.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery mt-4">
+                            <a href="./images/return2.png">
+                                <img src="./images/return2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+
+                    <section class="docs-section" id="item-5-9">
+                        <h2 class="section-heading">Manage Categories</h2>
+                        <p>All the categories will be listed here. You can create, update and delete categories from here.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/categories.png">
+                                <img src="./images/categories.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-5-10">
+                        <h2 class="section-heading">Stock Management</h2>
+                        <p>You can update your products stock.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/stock.png">
+                                <img src="./images/stock.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <p>You can update your combo products stock.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/stock2.png">
+                                <img src="./images/stock2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+
+                    </section>
+                    <section class="docs-section" id="item-5-11">
+                        <h2 class="section-heading">Brand</h2>
+                        <p>You can  add, update and delete Brands from here.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/brand.png">
+                                <img src="./images/brand.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-13">
+                        <h2 class="section-heading">Sellers</h2>
+                        <p> You can create sellers that contain the store name, description, store logo, favicon,permission , admin commission amount etc.. from here</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="images/sellers.png">
+                                <img src="./images/sellers.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <p> You can  add, update and delete Sellers from here</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="images/sellers2.png">
+                                <img src="./images/sellers2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                        <div class="section_bdr"></div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-14">
+                        <h2 class="section-heading">Products</h2>
+
+                        <div class="simplelightbox-gallery" id="product-1">
+                            <h4 class="">Attributes</h4>
+                             <p> Here, you can add, view, and update the status of attributes. It will manage attributes category-wise. For example, if the category name is weight, you can create attributes like 500 g, 1 kg, 2 kg, and so on</p>
+                            <a href="./images/attribute.png">
+                                <img src="./images/attribute.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="product-2">
+                            <h4>Products</h4>
+                            <p>You can create a product that contains basic details like name, description, category, brand, origin ,physical or digital product, tax information, and image. Additionally, you can set product deliverability and shipping settings, manage stock of products, and create variable products</p>
+                            <a href="./images/products.png">
+                                <img src="./images/products.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="product-3">
+                             <h4>Manage Products</h4>
+                              <p> You can  add, update and delete Products from here</p>
+                            <a href="./images/products2.png">
+                                <img src="./images/products2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="product-5">
+                             <h4>Product FAQs</h4>
+                              <p> You can  add, update and delete Products releted FAQs from here</p>
+                            <a href="./images/faq1.png">
+                                <img src="./images/faq1.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="product-4">
+                             <h4>Bulk Upload</h4>
+                              <p> You can  bulk upload and update Products from here</p>
+                            <a href="./images/bulk-upload.png">
+                                <img src="./images/bulk-upload.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+
+                    <section class="docs-section" id="item-5-15">
+                        <h2 class="section-heading">Combo Products</h2>
+                        <div class="simplelightbox-gallery" id="combo_product-1">
+                            <p> Here, you can add, view, and update the status of attributes .For example,you can create attributes like size - S,M,L, and so on</p>
+                           <h4 class="">Attributes</h4>
+                            <a href="./images/combo-attribute.png">
+                                <img src="./images/combo-attribute.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="combo_product-2">
+                            <p>You can create a product that contains basic details like the name, description, products included in a combo, similar products, tax information, and an image. Additionally, you can set product deliverability and shipping settings and manage the stock of products</p>
+                            <h4>Products</h4>
+                            <a href="./images/combo-products.png">
+                                <img src="./images/combo-products.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="combo_product-3">
+                            <h4>Manage Products</h4>
+                             <p> You can  add, update and delete Products from here</p>
+                            <a href="./images/combo-products2.png">
+                                <img src="./images/combo-products2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery" id="combo_product-5">
+                            <h4>Product FAQs</h4>
+                             <p> You can  add, update and delete Products releted FAQs from here</p>
+                           <a href="./images/faq2.png">
+                               <img src="./images/faq2.png" class="image-doc" alt="">
+                           </a>
+                       </div>
+                        <div class="simplelightbox-gallery" id="combo_product-4">
+                             <p> You can  bulk upload and update Products from here</p>
+                            <h4>Bulk Upload</h4>
+                            <a href="./images/bulk-upload.png">
+                                <img src="./images/bulk-upload.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+
+                    </section>
+
+
+                    <section class="docs-section" id="item-5-32">
+                        <h2 class="section-heading">Delivery Boys</h2>
+                        <p> Here you can Add, View, Edit & Delete delivery boys.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/delivery-boys.png">
+                                <img src="./images/delivery-boys.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery mt-4">
+                            <a href="./images/delivery-boys2.png">
+                                <img src="./images/delivery-boys2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                        <div class="section_bdr"></div>
+                    </section>
+
+                    <section class="docs-section" id="item-5-33">
+                        <h2 class="section-heading">Cash Collection</h2>
+                        <p>Here you can collect cash from delivery boy.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/cash-collection.png">
+                                <img src="./images/cash-collection.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="section_bdr"></div>
+                    </section>
+                    <section class="docs-section" id="item-5-34">
+                        <h2 class="section-heading">Media</h2>
+                        <p>Here you can upload and delete your system's media.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/media.png">
+                                <img src="./images/media.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-35">
+                        <h2 class="section-heading">Offers</h2>
+                        <p>Here, you can create offer images categorized by product,categories, brand, specific product,combo products, and offer URL</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/offers.png">
+                                <img src="./images/offers.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-36">
+                        <h2 class="section-heading">PromoCodes</h2>
+                        <p>Here you can create promocode for specific time period, repeat usage allowed or not, is cashback promocode ,miminum order amount, maximum discount amount.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/promocodes.png">
+                                <img src="./images/promocodes.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery">
+                               <p> Here you can Edit & Delete PromoCodes.</p>
+                            <a href="./images/promocodes2.png">
+                                <img src="./images/promocodes2.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-37">
+                        <h2 class="section-heading">Users</h2>
+                        <p>Here all the information related to Customer is display</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/users.png">
+                                <img src="./images/users.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-38">
+                        <h2 class="section-heading">Location</h2>
+                        <div class="simplelightbox-gallery">
+                            <h4>Zipcode</h4>
+                            <p>Here, you can create ZIP codes, set city name, set minimum delivery amounts, and specify delivery charges. You can also edit or delete existing ZIP codes</p>
+                            <a href="./images/zipcodes.png">
+                                <img src="./images/zipcodes.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery">
+                             <h4>City</h4>
+                            <p>Here, you can create City, set minimum delivery amounts, and specify delivery charges. You can also edit or delete existing cities</p>
+                            <a href="./images/city.png">
+                                <img src="./images/city.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery">
+                             <h4>Zone</h4>
+                            <p>Here, you can create Zone, specify delivery charges. You can also edit or delete existing zones</p>
+                            <a href="./images/zone.png">
+                                <img src="./images/zone.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <div class="simplelightbox-gallery">
+                             <h4>Pickup Location</h4>
+                             <p>Here,You can edit or delete and varify pickup location</p>
+                            <a href="./images/pickup-location.png">
+                                <img src="./images/pickup-location.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <section class="docs-section" id="item-5-39">
+                        <h2 class="section-heading">Firebase</h2>
+                        <p>Here you can add, edit your firebase settings.</p>
+                        <div class="simplelightbox-gallery">
+                            <a href="./images/firebase.png">
+                                <img src="./images/firebase.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                    </section>
+                    <!--//section-->
+                </article>
+                <footer class="footer">
+                    <div class="container text-center py-5">
+                        <small class="copyright">Made with <3 by <a href="https://infinitietech.com/" target="_blank">
+                                Infinitietech</a></small><br>
+                        <small class="copyright">Thanks to <a href="https://themes.3rdwavemedia.com/"
+                                target="_blank">3rd
+                                Wave Media</a> for the
+                            elegant documentation template.</small>
+                        <!--//social-list-->
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!--//docs-wrapper-->
+
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js">
+    </script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>
